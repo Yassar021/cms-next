@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Base Next.js + Supabase Project
 
-## Getting Started
+## 🚀 Overview
 
-First, run the development server:
+This project is built with [Next.js](https://nextjs.org/) and [Supabase](https://supabase.com/) to create a full-stack web application with authentication, database, and serverless functions.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🛠 Tech Stack
+
+- **Frontend:** Next.js, React
+- **Backend:** Supabase (PostgreSQL, Authentication, Storage, Functions)
+- **Styling:** Tailwind CSS (or any CSS framework of choice)
+- **Deployment:** Vercel, Supabase
+
+## 📌 Features
+
+<!-- - User Authentication (Sign up, Sign in, Sign out) -->
+
+- Database Integration with Supabase
+- API Routes with Next.js
+- Realtime Data Updates
+- Secure Role-Based Access
+- Storage for File Uploads
+
+## 🏗 Installation & Setup
+
+**1️⃣ Clone the Repository**
+
+```sh
+git clone https://github.com/yourusername/your-repo.git
+cd your-repo
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**2️⃣ Install Dependencies**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```sh
+npm install  # or yarn install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**3️⃣ Set Up Environment Variables**
 
-## Learn More
+```sh
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_anon_key
+SUPABASE_SERVICE_ROLE_KEY=your_service_role_key
+```
 
-To learn more about Next.js, take a look at the following resources:
+**4️⃣ Run the Development Server**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```sh
+npm run dev  # or yarn dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Then open http://localhost:3000 to see your app.
 
-## Deploy on Vercel
+## 🚀 Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Deploy on Vercel**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Push your code to GitHub/GitLab/Bitbucket.
+- Import your repository into Vercel.
+- Set up environment variables in Vercel.
+- Deploy and enjoy!
+
+## 📂 Project Structure
+
+```bash
+├── public
+├── src
+│   ├── utils
+│   │   └── server.ts
+│   └── app
+│       ├── instruments
+│       │   ├── page.tsx
+│       └── layout.tsx
+│       └── page.tsx
+├── .env.local.example
+├── .gitigonore
+├── .package.json
+├── README.md
+```
+
+## 🙌 Acknowledgments
+
+- [Next.js Docs](https://nextjs.org/)
+- [Supabase](https://supabase.com/)
